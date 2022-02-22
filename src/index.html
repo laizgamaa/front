@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Laiz Lira – a front-end developer</title>
+  <link rel="stylesheet" href="/src/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style> 
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    #main-header {
+      text-align: center;
+    }
+    .about-grid {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .date {
+      color: rgb(221, 139, 139);
+      font-size: 14px;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="main-header">
+    <h1>Laiz Lira</h1>
+    <h2>Welcome to my portfolio</h2>
+    <nav>
+      <ul id="navbar">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" style="padding: 1.5rem; width: 1200px; margin: 0 auto; border-bottom: 1px solid rgb(211, 211, 211)">
+    <article>
+      <header id="about">
+        <h2>About me</h2>
+      </header>
+      
+      <div class="about-grid">
+        <div>
+          <p>
+            Hi there! My name is Laiz and I am 22 years old. I am a front-end developer based in Recife, currently focusing on
+            building <span id="highlight">accessible, modern and user-friendly applications</span>. Since my fourteens I code for the web as a hobby, and in 2019
+            I started my career as a front-end developer. <br>
+            Nowdays, my main focus has been React ecosystem along with Next.js framework.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas elit sem, ac imperdiet ligula suscipit at.
+            Quisque eget commodo erat, eget bibendum nunc. Vivamus vitae odio euismod, ultricies turpis vitae, scelerisque enim.
+            Phasellus vitae ipsum purus. Curabitur blandit, orci ac egestas euismod, orci tellus aliquet est, et vehicula nulla
+            augue vitae purus. Nunc felis nulla, dapibus vitae tincidunt quis, scelerisque vel felis. Nam sagittis nunc quis
+            ultrices rutrum. Mauris venenatis, urna ut condimentum finibus, nisi odio dictum turpis, id semper ipsum mi a odio.
+          </p>
+        </div>
+
+        <img src="/public/me.jpeg" id="profile-photo" alt="Laiz's profile photo">
+      </div>
+
+    </article>
+
+    <section>
+      <header id="experiences">
+        <h2>Experiences</h2>
+      </header>
+
+      <div>
+        <p><b>Sciensa</b> <span class="date">Nov 2021 - Present</span></p>
+        <p>Front-end Developer</p>
+        <ul>
+          <li>Constant implementation of new features</li>
+          <li>Identification of problems and code refactoring</li>
+          <li>API integrations development</li>
+          <li>Participation in agile cerimonies such as sprint planning, daily, sprint review and retrospective</li>
+        </ul>
+      </div>
+
+      <div>
+        <p><b>CERS</b> <span class="date">Feb 2020 - Nov 2021</span></p>
+        <p>Front-end Developer</p>
+        <ul>
+          <li>System specifications analysis (flows, business rules etc)</li>
+          <li>Identification of problems and code refactoring</li>
+          <li>API integrations development and maintenance</li>
+          <li>Methods to ensure platforms works well on different browsers and devices</li>
+          <li>Deploys on Jenkins</li>
+          <li>Requirements gathering with the client when needed</li>
+          <li>Definition of user stories along with the client</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer style="text-align: center">
+    <h4>Where to find me</h4>
+    <nav>
+      <ul class="social-links">
+        <li><a href="mailto:laizgamalira@gmail.com">E-mail</a></li>
+        <li><a href="https://www.linkedin.com/in/laiz-lira-dev/">Linkedin</a></li>
+        <li><a href="https://github.com/laizgamaa">GitHub</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    function addSix(num) {
+      return num + 6;
+    }
+
+    function duplicate(num) {
+      return num.concat(num);
+    }
+
+    if (true) {                   // exemplifica scope
+      let myObject = {
+        "name": "Erick Schimdt",
+        "age": 32,
+        "height": 1.78
+      }
+      console.log(myObject);
+    }
+
+    console.log(addSix(2));
+    console.log(duplicate([1, 2, 3, 4, 5]));
+  </script>
+
+</body>
+</html>
